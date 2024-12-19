@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                 // Specifies ECMAScript version.
+    "module": "commonjs",            // CommonJS for Node.js compatibility.
+    "strict": true,                  // Enable strict type-checking options.
+    "esModuleInterop": true,         // Enable ES6 module interop.
+    "outDir": "./dist",              // Directory for compiled files.
+    "rootDir": "./src",              // Directory containing source files.
+    "typeRoots": ["node_modules/@types"], // Ensure type definitions are found.
+    "resolveJsonModule": true,       // Allow importing JSON files.
+    "skipLibCheck": true             // Skip checking library declaration files.
+  },
+  "include": ["src/**/*"],           // Include all files in the `src` directory.
+  "exclude": ["node_modules"]        // Exclude `node_modules` directory.
+}

@@ -1,0 +1,95 @@
+/* Header Styling */
+.site-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px; /* Adjust padding to include space on the right */
+    background-color: transparent;
+    color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 70px;
+    border-bottom: none;
+}
+
+
+main {
+    padding-top: 70px; /* Push content below the fixed header */
+}
+
+/* Website Name Styling */
+.site-name {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Login Button Styling */
+.login-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF4081;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px; /* Add margin to separate button from edge */
+}
+
+.login-button:hover {
+    background-color: #9e1d48;
+}
+
+/* Hero Section Styling */
+h1 {
+    font-size: calc(-24.41379px + 19.31034vw);
+    position: relative;
+    line-height: 86%;
+    letter-spacing: .015em;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    display: inline-block; /* Ensure inline behavior */
+}
+
+/* Hero Section Container */
+.home .site-hero {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-start;
+    position: relative;
+    -webkit-box-pack: justify;
+}
+
+
+.home .header_version {
+    position: absolute; /* Position relative to .site-hero */
+    bottom: 25px; /* Slightly above the bottom edge of the .site-hero */
+    right: 15px; /* Align to the right edge of the .site-hero */
+    font-size: calc(16.22989px + 2.60536vw); /* Responsive font size */
+    line-height: 84.5%; /* Compact line height */
+    letter-spacing: -0.005em; /* Subtle spacing adjustment */
+    font-weight: 700; /* Bold text */
+    font-family: inherit;
+    margin-left: 10px; /* Add spacing between h1 and version */
+    display: inline-block; /* Ensure inline alignment */
+}
+
+/* Responsive Adjustments */
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 1100px) {
+    .site-header {
+        padding: 10px;
+    }
+    .home .site-hero {
+        flex-direction: column; /* Stack hero section items vertically */
+        /* Remove align-items: center */
+    }
+}

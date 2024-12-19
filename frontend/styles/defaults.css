@@ -1,0 +1,34 @@
+/* Font Face Declaration */
+/* Custom font declaration for 'Roboto Bold' */
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+/* Base Styling for Body and HTML */
+body, html {
+    margin: 0;
+    padding: 0px;
+    font-family: "roboto-bold", sans-serif; /* Set custom font with a generic fallback */
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    line-height: 1.5; /* Consistent spacing between lines */
+}
+
+/* Universal Styling */
+/* Reset margins and paddings for all elements, optimize text rendering */
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+/* Safe Area Support */
+/* Ensure content respects device safe areas (e.g., for notches on mobile devices) */
+@supports (padding: max(0px)) {
+    body {
+        padding-left: max(20px, env(safe-area-inset-left, 20px));
+        padding-right: max(20px, env(safe-area-inset-right, 20px));
+    }
+}
