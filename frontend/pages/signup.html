@@ -16,26 +16,40 @@
     </header>
     <div class="container">
         <div class="header">
-            <h2>Login</h2>
+            <h2>Create Account</h2>
         </div>
         <form id="form" class="form">
             <div class="form-control">
-                <label for="username">Username or Email</label>
-                <input type="text" placeholder="chungus1735" id="username" />
+                <label for="username">Username</label>
+                <input type="text" placeholder="..." id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="..." id="email" />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
                 <label for="username">Password</label>
-                <input type="password" placeholder="Password" id="password"/>
+                <input type="password" placeholder="..." id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password check</label>
+                <input type="password" placeholder="..." id="password2"/>
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <button>Submit</button>
             <p class="signup-text">
-                Don't have an account? <a href="signup.html" class="login-link">Create Account</a>.
+                Already have an account? <a href="login.html" class="login-link">Log in</a>.
             </p>
         </form>
     </div>

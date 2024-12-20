@@ -26,9 +26,10 @@ body, html {
 
 /* Safe Area Support */
 /* Ensure content respects device safe areas (e.g., for notches on mobile devices) */
+/*
 @supports (padding: max(0px)) {
     body {
         padding-left: max(20px, env(safe-area-inset-left, 20px));
         padding-right: max(20px, env(safe-area-inset-right, 20px));
     }
-}
+}*/

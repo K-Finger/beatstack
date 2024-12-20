@@ -4,7 +4,7 @@
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px; /* Adjust padding to include space on the right */
+    padding: 20px 30px; /* Adjust padding to include space on the right */
     background-color: transparent;
     color: #000000;
     position: fixed;
@@ -38,7 +38,6 @@ main {
     transition: background-color 0.3s ease;
     display: inline-block;
     text-align: center;
-    margin-right: 30px; /* Add margin to separate button from edge */
 }
 
 .login-button:hover {
@@ -71,8 +70,8 @@ h1 {
 
 .home .header_version {
     position: absolute; /* Position relative to .site-hero */
-    bottom: 25px; /* Slightly above the bottom edge of the .site-hero */
-    right: 15px; /* Align to the right edge of the .site-hero */
+    bottom: 20px; /* Slightly above the bottom edge of the .site-hero */
+    right: 30px; /* Align to the right edge of the .site-hero */
     font-size: calc(16.22989px + 2.60536vw); /* Responsive font size */
     line-height: 84.5%; /* Compact line height */
     letter-spacing: -0.005em; /* Subtle spacing adjustment */
